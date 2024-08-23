@@ -81,7 +81,21 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
     </properties>
+    <distributionManagement>
 
+        <repository>
+            <id>release</id>
+            <name>libs-release-local</name>
+            <url>http://43.204.98.75:8082/artifactory/libs-release-local/</url>
+        </repository>
+    
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>libs-snapshot-local</name>
+            <url>http://43.204.98.75:8082/artifactory/libs-snapshot-local/</url>
+        </snapshotRepository>
+    
+    </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
